@@ -11,13 +11,13 @@ public class Main {
         int min = array[0];
         int avg = 0;
         int sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum = sum + array[i];
-            if (max < array[i])
-                max = array[i];
-            if (min > array[i])
-                min = array[i];
-            avg += array[i] / array.length;
+        for (int j : array) {
+            sum = sum + j;
+            if (max < j)
+                max = j;
+            if (min > j)
+                min = j;
+            avg += j / array.length;
         }
             System.out.println("the amount of expenses for the month" + " " + "sum =" + sum + "rub");
             System.out.println("maximum cost per day" + " =" + max + "rub");
